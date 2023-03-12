@@ -1,0 +1,28 @@
+import { Component, Host, h } from '@stencil/core';
+
+@Component({
+  tag: 'webtraining-personal-card',
+  styleUrl: 'webtraining-personal-card.scss',
+  shadow: true,
+})
+export class WebtrainingPersonalCard {
+
+  render() {
+    return (
+      <Host>
+        <div class="wrap-personal-card">
+          <div class="wrap-personal-card__img">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Juanma" />
+          </div>
+          <div class="wrap-personal-card__name">
+            <h2>Juanma Molins Cortés</h2>
+          </div>
+          <div class="wrap-personal-card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nihil omnis obcaecati quia architecto accusamus exercitationem dolorum blanditiis veniam autem.
+          </div>
+        </div>
+      </Host>
+    );
+  }
+
+}
